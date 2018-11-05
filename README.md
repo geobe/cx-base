@@ -31,3 +31,7 @@ run git command for every additional subproject
 * `git submodules add https://github.com/PATH-TO-SUBMODULE [module directory name]`
 
 `module directory name` is optional, default is to use git repository name
+
+## Working with IntelliJ IDEA
+Open build.gradle in the base project folder as new project:
+![open dialog](https://github.com/geobe/cx-base/blob/master/openprj0.jpg)
