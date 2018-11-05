@@ -21,7 +21,7 @@ At start, the core subproject holds all project-specific code:
 * [core](https://github.com/geobe/cx-core)
 ## Downloading the project from Github
 The easiest way is cloning from the command line with 
-* `git clone --recurse-submodules https://github.com/geobe/tbp-base`
+* `git clone --recurse-submodules https://github.com/geobe/cx-base`
 ## Running the project when a UI was developed
 * Open a terminal window in the base directory `cx-base` and run `gradlew bootRun` there.
 * Then open [localhost:8080/ui/main](http://localhost:8080/ui/main) in a browser.
