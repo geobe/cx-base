@@ -1,2 +1,6 @@
 rootProject.name = 'cx-base'
+include 'associations'
+include 'core'
+include 'state-machine'
+include 'vaadin-builder'
 
