@@ -36,16 +36,17 @@ run git command for every additional subproject
 ### Opening the project
 Open build.gradle in the base project folder as new project:
 
-`File -> Open...
-* ![open dialog](https://github.com/geobe/cx-base/blob/master/openprj0.jpg)
-* ![open as project](https://github.com/geobe/cx-base/blob/master/openprj1.jpg)
-* ![set import options](https://github.com/geobe/cx-base/blob/master/openprj2.jpg)
+`File -> Open...` leads you through a number of dialogs
+* select the gradle build file ![open dialog](https://github.com/geobe/cx-base/blob/master/openprj0.jpg)
+* tell it to be opened as project ![open as project](https://github.com/geobe/cx-base/blob/master/openprj1.jpg)
+* and set reasonable options ![set import options](https://github.com/geobe/cx-base/blob/master/openprj2.jpg)
 
 ### Overcoming detached HEAD message
 In the base project, a specific version of all submodules is referenced. 
 You can see this if you click on the Git menu in the bottom left corner:
 * ![Git pushup menu](https://github.com/geobe/cx-base/blob/master/commit00.jpg)
 * ![Git pushup menu expanded](https://github.com/geobe/cx-base/blob/master/commit01.jpg)
+
 Only the base module is on the master branch, all other modules are on some specific commits 
 in the version tree.
 
