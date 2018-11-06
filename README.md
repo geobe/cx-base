@@ -65,8 +65,14 @@ To work on this example project with a web based git repository,
 you have to host all modules you are changing in another repository.
 To make things easy, the new repository should have the same name as the original one.
 Else cloning would become somewhat more complex.
-#### Change remote with IntelliJ tools
-In the context menu, goto Git -> Repository -> Remotes...
+#### Change remote with IntelliJ dialogs
+1. In the project context menu, goto Git -> Repository -> Remotes...
+1. select the origin line of the module you want to change and click on the edit (pencil) button
+1. Now enter your new repository url into the dialog box
+* ![Change origin](https://github.com/geobe/cx-base/blob/master/commit10.jpg)
+
+Now you can push the local repository to the remote one using normal IntelliJ menus.
+* ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/commit06.jpg)
 
 #### Change remote on the command line
 1. Open the terminal window in IntelliJ or an external terminal
