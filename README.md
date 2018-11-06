@@ -37,28 +37,28 @@ run git command for every additional subproject
 Open build.gradle in the base project folder as new project:
 
 `File -> Open...` leads you through a number of dialogs
-* select the gradle build file ![open dialog](https://github.com/geobe/cx-base/blob/master/openprj0.jpg)
-* tell it to be opened as project ![open as project](https://github.com/geobe/cx-base/blob/master/openprj1.jpg)
-* and set reasonable options ![set import options](https://github.com/geobe/cx-base/blob/master/openprj2.jpg)
+* select the gradle build file ![open dialog](https://github.com/geobe/cx-base/blob/master/xopenprj0.jpg)
+* tell it to be opened as project ![open as project](https://github.com/geobe/cx-base/blob/master/xopenprj1.jpg)
+* and set reasonable options ![set import options](https://github.com/geobe/cx-base/blob/master/xopenprj2.jpg)
 
 ### Avoiding detached HEAD message
 In the base project, a specific version of all submodules is referenced. 
 You can see this if you click on the Git menu in the bottom left corner:
-* ![Git pushup menu](https://github.com/geobe/cx-base/blob/master/commit00.jpg)
-* ![Git pushup menu expanded](https://github.com/geobe/cx-base/blob/master/commit01.jpg)
+* ![Git pushup menu](https://github.com/geobe/cx-base/blob/master/xcommit00.jpg)
+* ![Git pushup menu expanded](https://github.com/geobe/cx-base/blob/master/xcommit01.jpg)
 
 Only the base module is on the master branch, all other modules are on 
 some specific commits in the version tree. 
 Trying to commit changes will result in a "Detached HEAD" error message.
 So before starting to edit a module like cx-core, you first have to checkout
 the local master branch for that module.
-* ![Checkout a module's local master](https://github.com/geobe/cx-base/blob/master/commit02.jpg)
-* ![Switched to local master](https://github.com/geobe/cx-base/blob/master/commit03.jpg)
+* ![Checkout a module's local master](https://github.com/geobe/cx-base/blob/master/xcommit02.jpg)
+* ![Switched to local master](https://github.com/geobe/cx-base/blob/master/xcommit03.jpg)
 
 All changes in the module can now be commited as expected.
 But make sure that your base project is also commited, else it may
 still references the previous version in the repository tree.
-* ![Commiting module and base project](https://github.com/geobe/cx-base/blob/master/commit04.jpg)
+* ![Commiting module and base project](https://github.com/geobe/cx-base/blob/master/xcommit04.jpg)
 
 ### Set your own remote repository
 To work on this example project with a web based git repository, 
@@ -69,10 +69,10 @@ Else cloning would become somewhat more complex.
 1. In the project context menu, goto Git -> Repository -> Remotes...
 1. select the origin line of the module you want to change and click on the edit (pencil) button
 1. Now enter your new repository url into the dialog box
-* ![Change origin](https://github.com/geobe/cx-base/blob/master/commit10.jpg)
+* ![Change origin](https://github.com/geobe/cx-base/blob/master/xcommit10.jpg)
 
 Don't forget to push the local repository to the remote one using normal IntelliJ menus.
-* ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/commit07.jpg)
+* ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/xcommit07.jpg)
 
 #### Change remote on the command line
 1. Open the terminal window in IntelliJ or an external terminal
@@ -89,4 +89,4 @@ But another github account works exactly the same way.
  T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote -v` 
  
  Now you can push the local repository to the remote one using normal IntelliJ menus.
- * ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/commit06.jpg)
+ * ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/xcommit06.jpg)
