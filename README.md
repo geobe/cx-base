@@ -41,14 +41,21 @@ Open build.gradle in the base project folder as new project:
 * tell it to be opened as project ![open as project](https://github.com/geobe/cx-base/blob/master/openprj1.jpg)
 * and set reasonable options ![set import options](https://github.com/geobe/cx-base/blob/master/openprj2.jpg)
 
-### Overcoming detached HEAD message
+### Avoiding detached HEAD message
 In the base project, a specific version of all submodules is referenced. 
 You can see this if you click on the Git menu in the bottom left corner:
 * ![Git pushup menu](https://github.com/geobe/cx-base/blob/master/commit00.jpg)
 * ![Git pushup menu expanded](https://github.com/geobe/cx-base/blob/master/commit01.jpg)
 
-Only the base module is on the master branch, all other modules are on some specific commits 
-in the version tree.
+Only the base module is on the master branch, all other modules are on 
+some specific commits in the version tree. 
+Trying to commit changes will result in a "Detached HEAD" error message.
+So before starting to edit a module like cx-core, you first have to checkout
+the local master branch for that module.
+* ![Checkout a module's local master](https://github.com/geobe/cx-base/blob/master/commit02.jpg)
+* ![Switched to local master](https://github.com/geobe/cx-base/blob/master/commit03.jpg)
 
-So when you try now to commit changes in a submodule 
-like core, you get a "Detached HEAD" error message. To avoid this, you first have to  
+All changes in the module can now be commited as expected. But beware: your base project
+still references the previous version in the repository tree
+
+### Set your own remote repository for commits
