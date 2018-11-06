@@ -71,7 +71,7 @@ Else cloning would become somewhat more complex.
 1. Now enter your new repository url into the dialog box
 * ![Change origin](https://github.com/geobe/cx-base/blob/master/commit10.jpg)
 
-Now you can push the local repository to the remote one using normal IntelliJ menus.
+Don't forget to push the local repository to the remote one using normal IntelliJ menus.
 * ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/commit06.jpg)
 
 #### Change remote on the command line
