@@ -72,7 +72,7 @@ Else cloning would become somewhat more complex.
 * ![Change origin](https://github.com/geobe/cx-base/blob/master/commit10.jpg)
 
 Don't forget to push the local repository to the remote one using normal IntelliJ menus.
-* ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/commit06.jpg)
+* ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/commit07.jpg)
 
 #### Change remote on the command line
 1. Open the terminal window in IntelliJ or an external terminal
