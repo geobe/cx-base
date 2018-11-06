@@ -55,7 +55,32 @@ the local master branch for that module.
 * ![Checkout a module's local master](https://github.com/geobe/cx-base/blob/master/commit02.jpg)
 * ![Switched to local master](https://github.com/geobe/cx-base/blob/master/commit03.jpg)
 
-All changes in the module can now be commited as expected. But beware: your base project
-still references the previous version in the repository tree
+All changes in the module can now be commited as expected.
+But make sure that your base project is also commited, else it may
+still references the previous version in the repository tree.
+* ![Commiting module and base project](https://github.com/geobe/cx-base/blob/master/commit04.jpg)
 
-### Set your own remote repository for commits
+### Set your own remote repository
+To work on this example project with a web based git repository, 
+you have to host all modules you are changing in another repository.
+To make things easy, the new repository should have the same name as the original one.
+Else cloning would become somewhat more complex.
+#### Change remote with IntelliJ tools
+In the context menu, goto Git -> Repository -> Remotes...
+
+#### Change remote on the command line
+1. Open the terminal window in IntelliJ or an external terminal
+1. Goto the module folder you want to change
+1. Verify your current git remote setting
+1. Set git remote to your own web repository. 
+In the example, I changed it from github to bitbucket.
+But another github account works exactly the same way.
+1. Verify that git remote has changed as you want it.
+
+`T:\IntelliJProjects\spring18\contacts\test2\cx-base>cd cx-core
+ T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote -v
+ T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote set-url origin https://geobe@bitbucket.org/geobe/cx-core.git
+ T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote -v` 
+ 
+ Now you can push the local repository to the remote one using normal IntelliJ menus.
+ * ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/commit06.jpg)
