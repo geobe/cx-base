@@ -83,10 +83,10 @@ In the example, I changed it from github to bitbucket.
 But another github account works exactly the same way.
 1. Verify that git remote has changed as you want it.
 
-`T:\IntelliJProjects\spring18\contacts\test2\cx-base>cd cx-core
- T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote -v
- T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote set-url origin https://geobe@bitbucket.org/geobe/cx-core.git
- T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote -v` 
+`T:\IntelliJProjects\spring18\contacts\test2\cx-base>cd cx-core`
+`T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote -v`
+`T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote set-url origin https://geobe@bitbucket.org/geobe/cx-core.git`
+`T:\IntelliJProjects\spring18\contacts\test2\cx-base\cx-core>git remote -v` 
  
  Now you can push the local repository to the remote one using normal IntelliJ menus.
  * ![IntelliJ push menu box](https://github.com/geobe/cx-base/blob/master/xcommit06.jpg)
